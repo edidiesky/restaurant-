@@ -15,7 +15,7 @@ export default function Root() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Homeindex />
-      <Footer/>
+      
     </>
   );
 }
