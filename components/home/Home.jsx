@@ -1,20 +1,20 @@
 import React from 'react'
 import About from './About'
-import Article from './Article'
 import Critics from './Critics'
 import Experience from './Experience'
-import News from './news'
+import News from './News'
 import SingleTakout from './SingleTakout'
 import TakeoutList from './TakeoutList'
 import TakeoutMenu from './TakeoutMenu'
+import Hero from './Hero'
 
 export default function Home() {
   return (
     <div>
+      <Hero/>
       <About/>
       <Experience/>
       <Critics/>
-      <Article/>
       <News/>
       <TakeoutMenu/>
       <TakeoutList/>

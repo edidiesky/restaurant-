@@ -30,7 +30,7 @@ export default function Plans() {
                   {x.list.map((x, index) => {
                     return (
                       // eslint-disable-next-line react/jsx-key
-                      <div className="w-100 hidden">
+                      <div className="w-100 hidden" key={index}>
                         <li className="w-85 auto flex column gap-2 fs-14 text-light center border-bottom py-1 auto">
                           <div className="flex w-100 item-center gap-2 justify-space">
                             <h3 className="family3 text-light fs-30 text-dark">
