@@ -42,6 +42,10 @@ const HeroContent = styled.div`
       font-size: 70px;
       line-height: 65px;
     }
+    @media (max-width: 480px) {
+      font-size: 41px;
+    line-height: 45px;
+    }
   }
   .exWrapper {
     .imageContent {
@@ -67,6 +71,9 @@ const HeroContent = styled.div`
         width: 50%;
         @media (max-width: 980px) {
           width: 70%;
+        }
+        @media (max-width: 480px) {
+          width: 90%;
         }
       }
     }
