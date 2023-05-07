@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -23,10 +24,14 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex-1 imageContent">
-          <img
+          <Image
+            alt=""
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
             src="https://avada.website/restaurant/wp-content/uploads/sites/112/2021/04/hero-mobile.jpg"
             className="w-100 h-100 imagewrapper"
-            alt=""
           />
         </div>
       </div>
@@ -44,7 +49,7 @@ const HeroContent = styled.div`
     }
     @media (max-width: 480px) {
       font-size: 41px;
-    line-height: 45px;
+      line-height: 45px;
     }
   }
   .exWrapper {
@@ -59,7 +64,7 @@ const HeroContent = styled.div`
       img {
         height: 100%;
         @media (max-width: 980px) {
-            position: absolute;
+          position: absolute;
         }
       }
     }

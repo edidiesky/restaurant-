@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -18,9 +19,13 @@ export default function News() {
       >
         <div className="NewsRight1 w-100 flex item-center justify-center">
           <div className="gradient2"></div>
-          <img
-            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info52x.jpg"
+          <Image
             alt=""
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
+            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info52x.jpg"
             className="imagewrapper w-100"
           />
           <div className="NewsRightCenter w-100 h-100 flex column gap-1">
@@ -42,9 +47,13 @@ export default function News() {
         </div>
         <div className="NewsRight1 w-100 flex item-center justify-center">
           <div className="gradient2"></div>
-          <img
-            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info52x.jpg"
+          <Image
             alt=""
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
+            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info52x.jpg"
             className="imagewrapper"
           />
           <div className="NewsRightCenter w-100 h-100 flex column gap-1">
@@ -74,9 +83,13 @@ export default function News() {
               News
             </h4>
           </div>
-          <img
-            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info52x.jpg"
+          <Image
             alt=""
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
+            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info52x.jpg"
             className="imagewrapper"
           />
           <div className="NewsRightBottom flex column gap-1 w-100">
@@ -104,7 +117,7 @@ const NewsContent = styled.div`
     transition: all 0.7s;
     position: relative;
     overflow: hidden;
-    @media (max-width:980px) {
+    @media (max-width: 980px) {
       height: 80rem;
     }
     .gradient2,
@@ -171,7 +184,7 @@ const NewsContent = styled.div`
       }
     }
     @media (max-width: 980px) {
-      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
   }
 

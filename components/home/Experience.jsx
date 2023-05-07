@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -6,10 +7,14 @@ export default function Experience() {
     <ExperienceContent className="flex w-100 column gap-4">
       <div className="w-100 exWrapper flex">
         <div className="flex-1 imageContent">
-          <img
+          <Image
+            alt=""
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
             src="https://avada.website/restaurant/wp-content/uploads/sites/112/2020/01/menu252x-1200x1375.jpg"
             className="w-100 h-100 imagewrapper"
-            alt=""
           />
         </div>
         <div className="experienceRight flex item-center justify-center">

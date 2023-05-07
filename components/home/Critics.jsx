@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -76,11 +77,16 @@ export default function Critics() {
               </button>
             </div>
           </div>
-        </div> <div className="CriticsRight1 flex item-center justify-center">
+        </div>{" "}
+        <div className="CriticsRight1 flex item-center justify-center">
           <div className="gradient2"></div>
-            <img
-            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info32x.jpg"
+          <Image
             alt=""
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
+            src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/info32x.jpg"
             className="imagewrapper"
           />
           <div className="flex CriticsRightC column gap-4 auto">

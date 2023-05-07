@@ -7,7 +7,11 @@
   list-style: none;
   scroll-behavior: smooth;
 }
-
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 :root {
   --green: #1b7e37;
   --grey-1: #dce4de;
@@ -40,6 +44,7 @@ body {
 
 .family3 {
   font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1.5px;
 }
 
 .shadow {
@@ -83,7 +88,7 @@ h2 {
   color: #000;
 }
 .btn:hover {
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.7);
 }
 .text-secondary {
   color: var(--yellow);
@@ -228,10 +233,6 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-2);
-}
-
-.a:hover {
-  text-decoration: underline;
 }
 
 .px-4 {
@@ -438,8 +439,6 @@ button {
   border-radius: 50%;
 }
 
-
-
 /* MyCarousel.css */
 
 .owl-nav {
@@ -502,14 +501,13 @@ button {
 }
 
 .input {
-  height: 44px;
-  border-radius: 6px;
-  background: #fff;
+  height: 55px;
+  background: #f7f7f7f7;
   padding: 0 2.4rem;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
-  font-size: 1rem;
+  border: 1px solid #f7f7f7f7;
+  font-size: 1.5rem;
   font-weight: 400;
   transition: all 0.2s;
   font-family: inherit;
@@ -628,6 +626,9 @@ html {
   }
   .w-70 {
     width: 100%;
+  }
+  .w-85 {
+    width: 90%;
   }
 }
 

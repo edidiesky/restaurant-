@@ -5,6 +5,11 @@ const webpack = require("webpack");
 const nextConfig = {
   reactStrictMode: true,
   "presets": ["next/babel"],
+  
+  images: { 
+    domains: ['avada.website'], 
+    formats: ['image/avif', 'image/webp']
+  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(
       new webpack.ProvidePlugin({
@@ -15,13 +20,13 @@ const nextConfig = {
     );
     return config;
   },
-  compiler: {
+    compiler: {
     reactStrictMode: true,
-    styledComponents: true,
+      styledComponents: true,
   },
   "rules": {
     "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+      "@next/next/no-page-custom-font": "off"
   }
 };
 module.exports = nextConfig;

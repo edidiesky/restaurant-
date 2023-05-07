@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -44,10 +45,13 @@ export default function About() {
             <div className="w-100 py-2">
               {/* eslint-disable-next-line @next/next/no-img-element,
           @next/next/no-img-element */}
-              <img
-                src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/signature.jpg"
+              <Image
                 alt=""
-                className=""
+                width={0}
+                sizes="100vw"
+                height={0}
+                loading="lazy"
+                src="https://avada.website/restaurant/wp-content/uploads/sites/112/2019/12/signature.jpg"
                 style={{ width: "20rem" }}
               />
             </div>
@@ -100,14 +104,14 @@ export default function About() {
 const AboutContent = styled.div`
   padding: 8rem 0;
   .wrapper {
-    @media (max-width:980px){
+    @media (max-width: 980px) {
       flex-direction: column;
     }
   }
   .aboutImageWrapper {
     position: relative;
     min-height: 30rem;
-    @media (max-width:980px) {
+    @media (max-width: 980px) {
       min-height: 85rem;
     }
     .imageWrapper {

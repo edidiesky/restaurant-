@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
@@ -6,10 +7,14 @@ export default function TakeoutMenu() {
     <TakeoutMenuContent className="flex w-100 column gap-4">
       <div className="w-100 exWrapper flex">
         <div className="flex-1 imageContent">
-          <img
+          <Image
+            alt=""
+            width={0}
+            sizes="100vw"
+            height={0}
+            loading="lazy"
             src="https://avada.website/restaurant/wp-content/uploads/sites/112/2020/01/menu252x-1200x1375.jpg"
             className="w-100 h-100 imagewrapper"
-            alt=""
           />
         </div>
         <div className="TakeoutMenuRight flex item-center justify-center">
@@ -24,7 +29,7 @@ export default function TakeoutMenu() {
             </h4>
             <div className="w-100 text-start">
               <button className="btn text-dark btn-2 family1 uppercase text-white text-light fs-16 py-2">
-                View takeout  Menu
+                View takeout Menu
               </button>
             </div>
           </div>
@@ -43,7 +48,7 @@ const TakeoutMenuContent = styled.div`
       img {
         height: 100%;
       }
-      @media (max-width:980px) {
+      @media (max-width: 980px) {
         height: 30rem;
       }
     }

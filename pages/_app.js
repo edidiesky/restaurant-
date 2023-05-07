@@ -3,7 +3,7 @@ import Layout from '@/components/Layout'
 // import Sidebar from '@/components/common/Sidebar'
 import '@/styles/globals.css'
 import { Provider } from 'react-redux'
-// import { store } from '../store'
+import { store } from '../store'
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,25 +15,27 @@ export default function App({ Component, pageProps }) {
     AOS.init({
       once: true,
       // offset: 50,
-      duration:4000
+      duration: 4000
     });
   }, []);
-  // return (
-  //   <Provider store={store}>
-  //     <Layout>
-  //       {/* <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
-  //       <Header sidebar={sidebar} setSidebar={setSidebar} /> */}
-  //       <Component {...pageProps} />
-  //     </Layout>
-  //   </Provider>
-  // )
   return (
+    <Provider store={store}>
       <Layout>
         {/* <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
         <Header sidebar={sidebar} setSidebar={setSidebar} /> */}
         <Component {...pageProps} />
-        <Footer/>
-        <Copyright/>
+        <Footer />
+        <Copyright />
       </Layout>
+    </Provider>
   )
+  // return (
+  //     <Layout>
+  //       {/* <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
+  //       <Header sidebar={sidebar} setSidebar={setSidebar} /> */}
+  //       <Component {...pageProps} />
+  //       <Footer/>
+  //       <Copyright/>
+  //     </Layout>
+  // )
 }
