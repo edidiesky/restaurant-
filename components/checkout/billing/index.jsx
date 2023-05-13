@@ -132,7 +132,11 @@ export default function Billingindex() {
           })}
         </div>
         <div className="btnWrapper">
-          <button type="submit" className="btn" onClick={handleAddressDetails}>
+          <button
+            type="submit"
+            className="btn family1"
+            onClick={handleAddressDetails}
+          >
             Continue
           </button>
         </div>
@@ -147,7 +151,8 @@ const BillingIndexContainer = styled.div`
   padding: 2rem 3rem;
   h2 {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: normal;
+    font-family: "Bebas Neue", sans-serif;
     color: var(--dark-1);
     text-align: center;
     line-height: 1.5;
@@ -170,21 +175,12 @@ const BillingIndexContainer = styled.div`
       justify-content: flex-end;
       align-items: center;
       .btn {
-        border: none;
         outline: none;
         padding: 1.5rem 4rem;
-        background: var(--red);
-        color: #fff;
-        font-size: 1.6rem;
-        border-radius: 40px;
+        font-size: 1.8rem;
         text-align: center;
         cursor: pointer;
         text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 1px;
-        &:hover {
-          background: var(--blue-1);
-        }
         @media (max-width: 980px) {
           padding: 1.6rem 4rem;
         }

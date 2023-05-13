@@ -14,6 +14,33 @@ import { RxCross1 } from "react-icons/rx";
 export default function Card({ x, type }) {
   const dispatch = useDispatch();
 
+  if (type === "payment") {
+    return (
+      <div key={x?._id} className="flex card w-100 item-center justify-space">
+        <div className="flex item-center gap-2 ">
+          <div className="cartProduct">
+            <div className="imageWrapper">
+              <img src={x?.image} alt="images" />
+            </div>
+          </div>
+          <div
+            style={{ fontWeight: "normal" }}
+            className="title w-100 flex fs-20 family3 item-center gap-1"
+          >
+            {x?.title} <RxCross1 fontSize={"12px"} /> {x?.quantity || 1}
+          </div>
+        </div>
+
+        <div
+          style={{ fontWeight: "normal" }}
+          className="price fs-20 family3 text-dark"
+        >
+          {x?.price * x?.quantity}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <tr key={x?._id}>
       <td className="svg">
@@ -36,10 +63,6 @@ export default function Card({ x, type }) {
             className="cartBtn"
             disabled={x?.quantity === x?.countInStock}
             onClick={() => dispatch(increaseBagQty(x))}
-            style={{
-              borderTopLeftRadius: "20px",
-              borderBottomLeftRadius: "20px",
-            }}
           >
             <BiPlus />
           </button>
@@ -48,10 +71,6 @@ export default function Card({ x, type }) {
             className="cartBtn"
             disabled={x?.quantity === 1}
             onClick={() => dispatch(decreaseBagQty(x))}
-            style={{
-              borderTopRightRadius: "20px",
-              borderBottomRightRadius: "20px",
-            }}
           >
             <BiMinus />
           </button>

@@ -1,7 +1,7 @@
+import Card from "@/components/cart/Card";
 import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
-import Card from "../../../cart/Card";
 export default function CartSummary() {
   const { bag } = useSelector((store) => store.bag);
 
@@ -10,8 +10,15 @@ export default function CartSummary() {
       <div>
         <div>
           <div className="w-100 tableTop flex item-center justify-space">
-            <h4>Product</h4>
-            <h4 className="sub">SubTotal</h4>
+            <h4
+              style={{ fontWeight: "normal" }}
+              className="price fs-20 family3 text-dark"
+            >
+              Product
+            </h4>
+            <h4 style={{ fontWeight: "normal" }} className="sub fs-20 family3">
+              SubTotal
+            </h4>
           </div>
         </div>
         <div className="w-100 py-2 flex column gap-2">
@@ -66,10 +73,7 @@ const CartContentContainer = styled.div`
     padding: 2rem 0;
   }
   .title {
-    font-size: 1.45rem;
-    font-weight: 400;
     color: var(--dark-1);
-    font-family: "Barlow", sans-serif;
     @media (max-width: 780px) {
       font-size: 2.4rem;
     }
@@ -78,9 +82,6 @@ const CartContentContainer = styled.div`
   h4 {
     text-align: center;
     padding: 2rem 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: "Barlow", sans-serif;
     color: var(--dark-1);
     @media (max-width: 780px) {
       font-size: 2rem;
@@ -89,7 +90,6 @@ const CartContentContainer = styled.div`
 
   h2 {
     font-size: 3rem;
-    font-weight: 700;
     color: var(--text-color);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     padding: 2rem 0;

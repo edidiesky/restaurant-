@@ -20,6 +20,7 @@
   --blue-1: #051120;
   --grey-2: #1e1e1e;
   --grey-3: #606060;
+  --red: #c61212;
 }
 
 body {
@@ -44,7 +45,6 @@ body {
 
 .family3 {
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 1.5px;
 }
 
 .shadow {

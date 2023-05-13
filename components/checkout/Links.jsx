@@ -7,7 +7,7 @@ export default function Links({ index, setIndex, type, step1, step2, step3 }) {
         <div
           onClick={() => setIndex(0)}
           className={
-            index === 0 ? "nav-link family1 active" : "nav-link family1"
+            index === 0 ? "nav-link family2 active" : "nav-link family2"
           }
         >
           {step1}
@@ -15,7 +15,7 @@ export default function Links({ index, setIndex, type, step1, step2, step3 }) {
         <div
           onClick={() => setIndex(1)}
           className={
-            index === 1 ? "nav-link family1 active" : "nav-link family1"
+            index === 1 ? "nav-link family2 active" : "nav-link family2"
           }
         >
           {step2}
@@ -23,7 +23,7 @@ export default function Links({ index, setIndex, type, step1, step2, step3 }) {
         <div
           onClick={() => setIndex(2)}
           className={
-            index === 3 ? "nav-link family1 active" : "nav-link family1"
+            index === 3 ? "nav-link family2 active" : "nav-link family2"
           }
         >
           {step3}
@@ -35,13 +35,13 @@ export default function Links({ index, setIndex, type, step1, step2, step3 }) {
     <LinksContainer>
       <div
         onClick={() => setIndex(0)}
-        className={index === 0 ? "nav-link family1 active" : "nav-link family1"}
+        className={index === 0 ? "nav-link family2 active" : "nav-link family2"}
       >
         Billing Details
       </div>
       <div
         onClick={() => setIndex(1)}
-        className={index === 1 ? "nav-link family1 active" : "nav-link family1"}
+        className={index === 1 ? "nav-link family2 active" : "nav-link family2"}
       >
         Review Payment
       </div>
@@ -66,8 +66,8 @@ const LinkContainer = styled.div`
   }
   .nav-link {
     background: transparent;
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2.4rem;
+    font-weight: normal;
     padding: 1.4rem;
     color: var(--blue-2);
     cursor: pointer;
@@ -136,10 +136,10 @@ const LinksContainer = styled.div`
     outline: none;
     width: 100%;
     text-align: start;
-    border-bottom: 1px solid var(--grey-2);
+    border-bottom: 1px solid rgba(0,0,0,.09);
     background: transparent;
-    font-size: 1.68rem;
-    font-weight: 400;
+    font-size: 2.2rem;
+    font-weight: normal;
     color: var(--dark-1);
     cursor: pointer;
     @media (max-width: 780px) {

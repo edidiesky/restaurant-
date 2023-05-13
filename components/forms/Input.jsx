@@ -27,26 +27,27 @@ const LabelContainer = styled.label`
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--dark-1);
-  font-weight: 600;
+  font-weight: normal;
   text-transform: capitalize;
+  font-family: "Lora", sans-serif;
 
   input {
-    height: 5.5rem;
-    border-radius: 6px;
-    background: var(--white);
+    height: 55px;
+    background: #f7f7f7f7;
     padding: 0 2.4rem;
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.4);
     outline: none;
-    font-size: 1.4rem;
+    border: 1px solid #f7f7f7f7;
+    font-size: 1.5rem;
     font-weight: 400;
-    font-family: "Barlow", sans-serif;
+    transition: all 0.2s;
+    font-family: inherit;
+    color: var(--dark-1);
 
     &::placeholder {
       font-size: 1.5rem;
-      font-family: "Barlow", sans-serif;
     }
     &:focus {
       border: 1.7px solid #222;

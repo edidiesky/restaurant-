@@ -39,7 +39,7 @@ export default function CartContent() {
 
 const CartContentContainer = styled.div`
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@ const CartContentContainer = styled.div`
   h3 {
     font-size: 3.5rem;
     font-weight: normal;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 0;
     text-transform: uppercase;
   }
@@ -71,7 +71,7 @@ const CartContentContainer = styled.div`
           width: 100%;
           font-size: 2.6rem;
           padding: 2rem 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
           font-weight: normal;
           color: var(--dark-1);
           font-family: "Bebas Neue", sans-serif;
@@ -85,7 +85,7 @@ const CartContentContainer = styled.div`
         td {
           text-align: center;
           padding: 2rem 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
           font-size: 1.7rem;
           font-weight: normal;
           font-family: "Lora", sans-serif;
@@ -102,7 +102,7 @@ const CartContentContainer = styled.div`
             cursor: pointer;
             background: rgb(0 0 0 / 8%);
             &:hover {
-              background: rgba(0, 0, 0, 0.08);
+              background: rgba(0, 0, 0, 0.1);
             }
 
             svg {
@@ -137,10 +137,10 @@ const CartContentContainer = styled.div`
             width: auto;
           }
           .btnWrapper {
-            width: 100px;
+            width: 150px;
             display: flex;
             align-items: center;
-            height: 4rem;
+            height: 5rem;
             justify-content: center;
             margin: 0 auto;
             h3 {
@@ -149,8 +149,8 @@ const CartContentContainer = styled.div`
               color: #333;
               flex: 1;
               font-family: "Bebas Neue", sans-serif;
-              border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-              border-top: 1px solid rgba(0, 0, 0, 0.08);
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+              border-top: 1px solid rgba(0, 0, 0, 0.2);
               height: 100%;
               display: grid;
               place-items: center;
@@ -160,11 +160,12 @@ const CartContentContainer = styled.div`
               outline: none;
               flex: 1;
               height: 100%;
-              background: rgb(0 0 0 / 8%);
               display: flex;
               align-items: center;
               justify-content: center;
               cursor: pointer;
+              border: 1px solid rgba(0, 0, 0, 0.2);
+              border-top: 1px solid rgba(0, 0, 0, 0.2);
               &:hover {
                 background: rgb(0 0 0 / 13%);
                 svg {
