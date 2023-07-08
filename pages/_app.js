@@ -1,7 +1,5 @@
 import Layout from '@/components/Layout'
 // import Header from '@/components/common/Header'
-// import Sidebar from '@/components/common/Sidebar'
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import '@/styles/globals.css'
 import { Provider } from 'react-redux'
 import { store } from '../store'
@@ -19,24 +17,16 @@ export default function App({ Component, pageProps }) {
       duration: 4000
     });
   }, []);
-  const initialOptions = {
-    "client-id":
-      "AZwhvDm_lNhSOcDkza_6-5Yzi8diCZA-FKB4kbmDq8QyZofI84RMZ5Ao3aXcdao09k6NOl0OMOUfPyNp",
-    currency: "USD",
-    intent: "capture",
-  };
   return (
-    <PayPalScriptProvider options={initialOptions}>
       <Provider store={store}>
         <Layout>
           {/* <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
         <Header sidebar={sidebar} setSidebar={setSidebar} /> */}
           <Component {...pageProps} />
-          <Footer />
-          <Copyright />
+          {/* <Footer />
+          <Copyright /> */}
         </Layout>
       </Provider>
-    </PayPalScriptProvider>
   )
   // return (
   //     <Layout>

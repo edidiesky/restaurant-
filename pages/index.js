@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Homeindex from "@/components/home/Home";
+// import Homeindex from "@/components/home/Home";
 import Footer from "@/components/common/Footer";
+import Home from "@/food/components/home/Home";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +15,7 @@ export default function Root() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Homeindex />
-      
+      <Home />
     </>
   );
 }

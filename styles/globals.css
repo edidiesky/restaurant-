@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Forum&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
   text-decoration: none;
   margin: 0;
@@ -13,38 +16,35 @@
   box-sizing: border-box;
 }
 :root {
-  --green: #1b7e37;
-  --grey-1: #dce4de;
-  --dark-2: #1c1c1c;
+  --grey-1: rgb(167, 167, 167);
   --dark-1: #000000;
-  --blue-1: #051120;
-  --grey-2: #1e1e1e;
-  --grey-3: #606060;
-  --red: #c61212;
+  --primary: #e4c590;
+  --background_2: #0e0d0c;
 }
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
-  font-family: "Work Sans", sans-serif;
+  background-color: #0e0d0c;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
-  line-height: 33.25px;
+  line-height: 1.3;
 }
 
 /* custom css */
 
 .family1 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .family2 {
-  font-family: "Lora", sans-serif;
+  font-family: "Forum", sans-serif;
 }
 
 .family3 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
 }
 
 .shadow {
@@ -90,8 +90,8 @@ h2 {
 .btn:hover {
   border: 1px solid rgba(0, 0, 0, 0.7);
 }
-.text-secondary {
-  color: var(--yellow);
+.text_secondary {
+  color: var(--primary) !important;
 }
 
 .text-white {
@@ -144,7 +144,7 @@ button {
 }
 
 .text-grey {
-  color: var(--grey-3);
+  color: var(--grey-1);
 }
 
 .text-grey2 {
