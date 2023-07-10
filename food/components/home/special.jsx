@@ -5,7 +5,7 @@ const Special = () => {
   return (
     <SpecialWrapper>
       <div
-        className="w-100 flex item-center gap-4"
+        className="w-100 flex wrapper item-center gap-4"
         style={{ gap: "10rem", minHeight: "100vh" }}
       >
         <div className="flex-1 h-100">
@@ -15,8 +15,8 @@ const Special = () => {
             className="w-100 h-100"
           />
         </div>
-        <div className="flex-1 flex item-center justify-center h-100">
-          <div className="flex column gap-2 w-100 h-100">
+        <div className="flex-1 right flex item-center justify-center h-100">
+          <div className="flex item-start justify-center column gap-2 w-85 auto h-100">
             <h2 className="text-start family2 text-white">
               <span
                 className="fs-12 text-extra-bold family3 uppercase text_secondary block"
@@ -52,9 +52,24 @@ const Special = () => {
   );
 };
 const SpecialWrapper = styled.div`
+margin-top: 6rem;
   h2 {
     font-size: 5rem;
     font-weight: normal;
+  }
+  .h-100 {
+    @media (min-width:980px) {
+      height: 100vh;
+    }
+}
+  .wrapper {
+    @media (max-width:780px) {
+      flex-direction: column;
+      .flex-1 {
+        width: 100%;
+      }
+    }
+    
   }
 `;
 

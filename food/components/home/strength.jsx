@@ -44,9 +44,9 @@ const StrenghtWrapper = styled.div`
   padding: 7rem 0;
   background-color: #171819;
   position: relative;
-  @media (min-width:1080px) {
+  /* @media (min-width:1080px) {
     min-height: 100vh;
-  }
+  } */
   .image {
     height: 80px;
     width: auto;
@@ -59,12 +59,12 @@ const StrenghtWrapper = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
     @media (max-width: 1080px) {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     }
     .card {
       padding: 4rem 2rem;
       background-color: #151616;
-      border-radius: 10px;
+      border-radius: 5px;
       &:nth-of-type(even) {
         background-color: #121111;
       }

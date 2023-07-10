@@ -56,7 +56,7 @@ const Menu = () => {
               <span className="text_secondary">7.00am</span> to{" "}
               <span className="text_secondary">9:00 pm</span>
             </h5>
-            <Button text={'view all menu'}/>
+            <Button text={"view all menu"} />
           </div>
         </div>
       </div>
@@ -113,6 +113,9 @@ const MenuWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
     grid-column-gap: 10rem;
+    @media (max-width: 780px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 `;
 

@@ -78,8 +78,8 @@ const Chef = () => {
 };
 const ChefWrapper = styled.div`
   background: var(--background_2) !important;
-  min-height: 100vh;
-  padding: 6rem 0;
+  /* min-height: 100vh; */
+  padding: 9rem 0;
   .grid_wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
