@@ -13,19 +13,24 @@ import Testimonial from "./testimonial";
 import Hero from "./hero";
 import Specialities from "./specialities";
 import Strength from "./strength";
+import Header from "@/food/common/Header";
+import News from "./news";
+// import News from "@/components/home/News";
 
 const Home = () => {
   return (
     <HomeWrapper>
+      <Header />
       <Hero />
       <Service />
       <About />
       <Special />
       <Menu />
-      <Specialities/>
+      <Specialities />
       <Testimonial />
       {/* resre */}
-      <Strength/>
+      <Strength />
+      <News />
       <Chef />
       <Feature />
       <Event />

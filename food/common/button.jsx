@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = ({ text, subtext }) => {
-  return <ButtonWrapper className="fs-16 family3">{text}</ButtonWrapper>;
+const Button = ({ text, subtext, type }) => {
+  return (
+    <ButtonWrapper
+      className={type === "button" ? "fs-16 family3 active" : "fs-16 family3"}
+    >
+      {text}
+    </ButtonWrapper>
+  );
 };
 
 const ButtonWrapper = styled.button`
@@ -13,6 +19,11 @@ const ButtonWrapper = styled.button`
   font-weight: 400;
   color: var(--primary);
   text-transform: uppercase;
+  &.active {
+    background-color: var(--primary);
+    color: #222;
+    font-weight: 600;
+  }
 `;
 
 export default Button;

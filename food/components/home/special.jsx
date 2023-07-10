@@ -34,7 +34,7 @@ const Special = () => {
               Lobster Tortellini
               <span
                 style={{ width: "80%", lineHeight: "2", paddingTop: "1.5rem" }}
-                className="family3 fs-16 text-bold block text-white"
+                className="family3 fs-16 text-light block text-white"
               >
                 Lorem Ipsum is simply dummy text of the printingand typesetting
                 industry lorem Ipsum has been the industrys standard dummy text
@@ -67,6 +67,9 @@ margin-top: 6rem;
       flex-direction: column;
       .flex-1 {
         width: 100%;
+      }
+      .right {
+        padding-bottom: 4rem;
       }
     }
     
