@@ -12,6 +12,7 @@ import Menu from "./menu";
 import Testimonial from "./testimonial";
 import Hero from "./hero";
 import Specialities from "./specialities";
+import Strength from "./strength";
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Home = () => {
       <Menu />
       <Specialities/>
       <Testimonial />
+      {/* resre */}
+      <Strength/>
       <Chef />
       <Feature />
       <Event />

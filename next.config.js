@@ -7,7 +7,7 @@ const nextConfig = {
   "presets": ["next/babel"],
   
   images: { 
-    domains: ['avada.website'], 
+    domains: ['avada.website',"kalanidhithemes.com"], 
     formats: ['image/avif', 'image/webp']
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -15,7 +15,7 @@ const nextConfig = {
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
-        "window.jQuery": "jquery",
+        "window.jQuery": "jquery",  
       })
     );
     return config;
