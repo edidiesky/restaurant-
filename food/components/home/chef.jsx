@@ -41,7 +41,6 @@ const Chef = () => {
               />
             </div>
           </span>
-          Upcoming Ev
           Meet Our Chef
         </h2>
         <div className="grid_wrapper w-90 auto">
