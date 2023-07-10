@@ -34,7 +34,7 @@ const Event = () => {
               <img
                 src="https://kalanidhithemes.com/live-preview/landing-page/delici/all-demo/Delici-Defoult/images/icons/separator.svg"
                 alt=""
-                style={{width:"10rem",padding:"1.5rem 0"}}
+                style={{ width: "10rem", padding: "1.5rem 0" }}
               />
             </div>
           </span>
@@ -125,7 +125,6 @@ const EventWrapper = styled.div`
   h2 {
     font-size: 6rem;
     font-weight: normal;
-  
   }
 `;
 

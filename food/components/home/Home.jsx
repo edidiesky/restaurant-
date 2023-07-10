@@ -11,6 +11,7 @@ import Menu from "./menu";
 // import Hero from "@/components/home/Hero";
 import Testimonial from "./testimonial";
 import Hero from "./hero";
+import Specialities from "./specialities";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <About />
       <Special />
       <Menu />
+      <Specialities/>
       <Testimonial />
       <Chef />
       <Feature />

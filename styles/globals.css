@@ -224,22 +224,6 @@ button {
   padding-right: 6rem;
 }
 
-::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-  background: #ccc;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--dark-2);
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--dark-2);
-}
 
 .px-4 {
   padding: 0 4rem;
@@ -481,7 +465,7 @@ button {
 }
 
 .w-85 {
-  width: 80%;
+  width: 86%;
   max-width: 1290px;
 }
 

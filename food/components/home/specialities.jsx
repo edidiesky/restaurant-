@@ -1,18 +1,18 @@
 import Head from "@/food/common/head";
 import React from "react";
 import styled from "styled-components";
-const Testimonial = () => {
+const Specialities = () => {
   return (
-    <TestimonialWrapper>
+    <SpecialitiesWrapper>
       <div className="w-90 auto">
       <Head text={"Best Specialties"} subtext={"SPECIAL OFFER"} />
       </div>
-    </TestimonialWrapper>
+    </SpecialitiesWrapper>
   );
 };
-const TestimonialWrapper = styled.div`
+const SpecialitiesWrapper = styled.div`
   padding: 7rem 0;
   position: relative;
 `;
 
-export default Testimonial;
+export default Specialities;
