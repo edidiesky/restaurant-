@@ -52,18 +52,18 @@ const Special = () => {
   );
 };
 const SpecialWrapper = styled.div`
-margin-top: 6rem;
+  /* margin-top: 6rem; */
   h2 {
     font-size: 5rem;
     font-weight: normal;
   }
   .h-100 {
-    @media (min-width:980px) {
-      height: 100vh;
+    @media (min-width: 980px) {
+      min-height: 100vh;
     }
-}
+  }
   .wrapper {
-    @media (max-width:780px) {
+    @media (max-width: 780px) {
       flex-direction: column;
       .flex-1 {
         width: 100%;
@@ -72,7 +72,6 @@ margin-top: 6rem;
         padding-bottom: 4rem;
       }
     }
-    
   }
 `;
 
